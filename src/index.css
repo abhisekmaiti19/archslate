@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+.archslate {
+  font-family: "Playfair Display", serif;
+}
+.gloss {
+  animation-name: glossy;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes glossy {
+  0% {
+    transform: translate(0);
+    /* opacity: 0; */
+  }
+  100% {
+    transform: translateX(800%);
+  }
+}
